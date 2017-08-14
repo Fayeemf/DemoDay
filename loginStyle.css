@@ -9,7 +9,7 @@
     margin-top: 5vh;
 }
 .col-xs-4{
-    border: 2px red solid;
+    /* border: 2px red solid; */
 }
 
 .container{
@@ -17,4 +17,8 @@
 }
 h1{
     text-align: center;
+}
+.btn{
+    margin-top: 5vh;
+    margin-left: 7.5vw;
 }
