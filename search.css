@@ -4,3 +4,15 @@ h3{
 .form-control{
     text-align: center;
 }
+.container{
+    text-align: center;
+}
+h3{
+    font-size: 30px;
+}
+h2{
+    font-size: 15px;
+}
+.input-group{
+    padding: 30px;
+}
