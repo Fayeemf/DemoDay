@@ -1,0 +1,29 @@
+.placeholder{
+    height: 30vw;
+    width: 30vw;
+}
+.col-md-3{
+    /* background-color:green; */
+}
+.col-md-6{
+    /* background-color: red; */
+}
+.col-md-4{
+    /* width: 33vw; */
+    /* background-color: blue; */
+}
+.row{
+    /* display:inline-block; */
+}
+/* @media (max-width: 900px){
+    .col-md-4{
+        margin-left: 25vw;
+    }
+} */
+#map {
+        height: 30vh;
+        width: 90vw;
+       }
+.btn{
+    background: white;
+}
