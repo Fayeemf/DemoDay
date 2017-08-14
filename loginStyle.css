@@ -20,5 +20,10 @@ h1{
 }
 .btn{
     margin-top: 5vh;
-    margin-left: 7.5vw;
+    margin-left: 5vw;
+    background: white;
+}
+.btn-group{
+    margin-bottom: -55vh;
+    margin-left: 25vw;  
 }
