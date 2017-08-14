@@ -1,0 +1,20 @@
+ .img-circle{
+    height: 33vw;
+    width: 33vw;
+    margin-top: 20vh;
+} 
+.form-control{
+    width: 75vw;
+    margin-left: 12.5vw;
+    margin-top: 5vh;
+}
+.col-xs-4{
+    border: 2px red solid;
+}
+
+.container{
+    margin-top: 15vh;
+}
+h1{
+    text-align: center;
+}

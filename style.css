@@ -26,4 +26,10 @@
        }
 .btn{
     background: white;
+    height: 5vh;
+    width: 20vw;
+}
+p{
+    text-align: center;
+    border: 2px red solid;
 }
