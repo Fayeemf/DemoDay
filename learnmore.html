@@ -17,37 +17,71 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style2.css" class="css">
+    <!-- <link rel="stylesheet" href="style2.css" class="css"> -->
     <script src="main.js"></script>
 </head>
 <body>
-    <h1>What We Do</h1>
-        <div class="">
-            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973461_960_720.png" alt="..." class="img-circle img-responsive pfp">
-            <p>profile picture</p>
-        </div>
     <div class="row">
-        <div class="col-md-6">
-            <img src="https://unsplash.it/200/300" alt="..." class="img-rounded img-responsive">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ipsum purus, tincidunt non iaculis ac, condimentum id lectus.Vestibulum quis tortor ut erat scelerisque feugiat sed sed nulla. Praesent semper sit amet ex viverra fermentum.</p>
+        <div class="col-xs-4">
+            <img style="height:15vh;width:15vh"src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973461_960_720.png" alt="..." class="img-circle img-responsive pfp">
+        </div><!-- end profile picture -->
+        <div class="col-xs-4">
+            <h1>What We Do</h1>
         </div>
-        <div class="col-md-6">
-            <img src="https://unsplash.it/200/300" alt="..." class="img-rounded img-responsive image2">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ipsum purus, tincidunt non iaculis ac, condimentum id lectus.Vestibulum
-            quis tortor ut erat scelerisque feugiat sed sed nulla. Praesent semper sit amet ex viverra fermentum. </p>
+        <div class="col-xs-4"></div>
+    </div>
+        
+    <div class="row">
+        <div class="col-md-6 left">
+            <div class="row">
+                <a href="https://placeholder.com">
+                    <img style="float:left"class ='img-responsive placeholder'src="http://via.placeholder.com/150x150">
+                </a>
+            </div>
+            <div class="row">
+                <p style="float:right">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="col-md-6 right">
+            <div class="row">
+                <a href="https://placeholder.com">
+                <img style="float:right"class ='img-responsive placeholder'src="http://via.placeholder.com/150x150">
+            </a>
+            </div>
+            <div class="row">
+                <p style="float:left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </div>
+            
         </div>
     </div>
     <div class="row">
         <div class="centerPic">
-            <div class="col-md-4"></div>
-            <div class="col-md-4">.<img src="https://unsplash.it/200/300" alt="..." class="img-rounded img-responsive image3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ipsum purus, tincidunt non iaculis ac, condimentum
-                id lectus.Vestibulum quis tortor ut erat scelerisque feugiat sed sed nulla. Praesent semper sit amet ex viverra
-                fermentum. Phasellus nisl risus, rhoncus vel urna a, bibendum tempor lectus. Donec sodales at enim maximus
-                accumsan.</p></div>
-            <div class="col-md-4"></div>
-            
+            <div class="col-md-4">
+                <div style="margin-right: 20vw;overflow:auto;"class="text">
+                    
+                </div>
+            </div>
+            <div class="col-md-4">
+                <a href="https://placeholder.com"><img style="margin: 0 auto"class ='img-responsive placeholder'src="http://via.placeholder.com/150x150"></a>
+            </div>
+            <div class="col-md-4">
+                <div style="margin-left: 21vw;"class="text">
+                    
+                </div>
+            </div>
         </div>
+        <style>
+            @media (max-width:1000px){
+                .col-md-6 left{
+                    width: 33vw;
+                    float: left;
+                }
+                .col-md-6 right{
+                    width: 33vw;
+                    float: right;
+                }
+            }
+        </style>
     </div>
     <div class="row">
         <div class="btn-group buttons" role="group" aria-label="...">

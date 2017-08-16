@@ -16,3 +16,7 @@ h2{
 .input-group{
     padding: 30px;
 }
+.btn{
+    background: white;
+    border: 0;  
+}

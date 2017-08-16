@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="search.css">
+<link rel="stylesheet" href="style.css">
 <!-- <link rel="stylesheet" href="style2.css"> -->
 <html>
 
@@ -13,62 +13,49 @@
 </head>
 
 <body>
-    <h3>Find Activities Near You</h3>
-    <div class="container">
-        <div class="row">
-            <h2>Search Key Words</h2>
-            <div id="custom-search-input">
-                <div class="input-group col-md-12">
-                    <input type="text" class="  search-query form-control" placeholder="Key Words: 'Chelsea Market','Kids'" />
-                    <span class="input-group-btn">
-                        <button class="btn btn-default" type="submit">Search</button>
-                        <span class=" glyphicon glyphicon-search"></span>
-                    </span>
+    <div class="container search">
+        <h3 class="centertext">Find Activities Near You</h3>
+        <div class="centertext container">
+            <div class="row">
+                <h2>Search Key Words</h2>
+                <div id="custom-search-input">
+                    <div class="input-group col-md-12">
+                        <input type="text" class="centertext search-query form-control" placeholder="Key Words: 'Chelsea Market','Kids'" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-default whitebtn" type="submit">Search</button>
+                            <span class=" glyphicon glyphicon-search"></span>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="map"></div>
-    <script>
+        <div id="map"></div>
+        <script>
         function initMap() {
-            var uluru = { lat: 40.742555, lng: -74.006084 };
+            var positions = [
+                {
+                    position: new google.maps.LatLng(40.742555, -74.006084)
+                }, {
+                    position: new google.maps.LatLng(40.752555, -74.006084)
+                }, {
+                    position: new google.maps.LatLng(40.740506, -74.006801)
+                }
+
+
+            ];
             var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 14,
-                center: uluru
+                center: positions[0].position
             });
-            var marker = new google.maps.Marker({
-                position: uluru,
-                map: map
-
-            });
-            var features = [
-                {
-                    position: new google.maps.LatLng(40.741260, -74.006452),
-                    type: 'info'
-                }, {
-                    position: new google.maps.LatLng(40.743004, -74.004796),
-                    type: 'info'
-                },
-            ]
-            features.forEach(function (feature) {
+            positions.forEach(function (place) {
                 var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(40.741260, -74.006452),
-                    icon: icons[feature.type].icon,
+                    position: place.position,
                     map: map
-                });
-                var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
-                var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(40.741260, -74.006452),
-                    map: map,
-                    icon: iconBase + 'parking_lot_maps.png'
-                });
-
-            })
-        }
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsIHdanobFkeL0T5fvg86bb8YKwcaPqQM&callback=initMap">
-
-    </script>
+                })
+            })}
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsIHdanobFkeL0T5fvg86bb8YKwcaPqQM&callback=initMap"></script>
+    </div>
 </body>
 
 </html>
