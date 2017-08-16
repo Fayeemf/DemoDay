@@ -1,27 +1,26 @@
-function initMap() {
-    var positions = [
-        {
-            position: new google.maps.LatLng(40.742555, -74.006084)
-        }, {
-            position: new google.maps.LatLng(40.752555, -74.006084)
-        }, {
-            position: new google.maps.LatLng(40.740506, -74.006801)
-        }
+// function initMap() {
+//     var positions = [
+//         {
+//             position: new google.maps.LatLng(40.742555, -74.006084)
+//         }, {
+//             position: new google.maps.LatLng(40.752555, -74.006084)
+//         }, {
+//             position: new google.maps.LatLng(40.740506, -74.006801)
+//         }
 
 
-    ];
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 14,
-        center: positions[0].position
-    });
-    positions.forEach(function (place) {
-        var marker = new google.maps.Marker({
-            position: place.position,
-            map: map
-        })
-    })
-}
-
+//     ];
+//     var map = new google.maps.Map(document.getElementById('map'), {
+//         zoom: 14,
+//         center: positions[0].position
+//     });
+//     positions.forEach(function (place) {
+//         var marker = new google.maps.Marker({
+//             position: place.position,
+//             map: map
+//         })
+//     })
+// }
 
 function myApp(){
     console.log('tests');
